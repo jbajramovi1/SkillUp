@@ -2,30 +2,24 @@ body{
 	width: 100%;
 	margin: 0px;
 	min-width: 500px;
-	max-width: 1300px;
 	padding: 0px;
 	overflow-x: hidden;
 	overflow-y: scroll;
-	text-align: center;
+	
 }
 
-html{
-	margin: 0px;
-	padding: 0px;
-}
+
 .red{
-	background-color: blue;
 	width:100%;
-	margin: 0;
+	margin:0;
 	padding: 10px;
-	min-height: 250px;
+	height: 250px;
 }
 
 .kolona{
-	background-color: red;
 	margin-left: 2%;
 	margin-right: 2%;
-	min-height: 250px;
+	height: 250px;
 	float: left;
 }
 
@@ -39,6 +33,63 @@ html{
 }
 
 #footer {
-	min-height: 75px;
-	background-color: yellow;
+	height: 75px;
+}
+
+.red.header{
+	opacity: 0.75;
+	padding:0;
+	background-size: cover;
+	background-position: center;
+	background-clip: content-box;
+	overflow: auto;
+}
+
+#header_tedtalks{
+	background-image:url(http://www.ijmuk.org/sites/default/files/styles/surcore_image_desktop_1x/public/page/Newsroom%20-%20Header3.jpg?itok=Zms149Fd);
+}
+
+#header_softskills{
+	background-image: url(http://mfassets.s3.amazonaws.com/company/C97db159a1c6c09a6aad4ec5a33d730f5/assets/D6ad09f3318eba404c715c9138e42fa70-0516C9983B13D0F153091D1CCF3674F9.jpg);
+}
+
+#header_novosti{
+	background-image: url(https://wallpaperscraft.com/image/newspaper_coffee_cup_spoon_sunglasses_news_cup_holder_84893_1366x768.jpg);}
+
+#header_kontakt{
+	background-image: url(http://mfassets.s3.amazonaws.com/company/C97db159a1c6c09a6aad4ec5a33d730f5/assets/De7dd17a81896d678ff4d9b1977ceee5e-89939A629F44042F987F1D28924C2879.jpg);
+}
+
+#header_login{
+	background-image: url(https://static.pexels.com/photos/6352/woman-hand-smartphone-laptop-landscape.jpg);
+}
+
+.naslov{
+	font-size: 50px;
+	font-family: "Candara";
+	position: absolute;
+	top: 130px;
+	left: 12px;
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+#index_background{
+	background-image: url(http://www.otj.com/wp-content/uploads/2015/06/Pantry-v2.jpg);
+	opacity: 0.8;
+	padding:0;
+	background-size: cover;
+	background-position: center;
+	overflow: auto;
+	overflow-x: hidden;
+	width:100%;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+
+#index_naslov{
+	color: black;
+	font-size: 100px;
+	top:150px;
+	left: 1000px;
 }
