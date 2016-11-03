@@ -34,15 +34,17 @@ body{
 
 #footer {
 	height: 75px;
+	
 }
 
 .red.header{
-	opacity: 0.75;
-	padding:0;
+	opacity: 0.85;
+	padding: 0;
 	background-size: cover;
 	background-position: center;
 	background-clip: content-box;
 	overflow: auto;
+	
 }
 
 #header_tedtalks{
@@ -71,7 +73,7 @@ body{
 	top: 130px;
 	left: 12px;
 	color: white;
-	text-shadow: 2px 2px 4px #000000;
+	text-shadow: 2px 2px 4px black;
 }
 
 #index_background{
@@ -92,4 +94,27 @@ body{
 	font-size: 100px;
 	top:150px;
 	left: 1000px;
+}
+
+
+.meni{
+	margin-top: 10px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.meni.stavka{
+	float: right;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.meni.link{
+	text-decoration: none;
+	color: white;
+	text-shadow: 1px 1px 6px black;
+	font-family: "Candara";
+	font-size: 20px;
 }
