@@ -76,17 +76,16 @@ body{
 	text-shadow: 2px 2px 4px black;
 }
 
-#index_background{
-	background-image: url(http://www.otj.com/wp-content/uploads/2015/06/Pantry-v2.jpg);
-	opacity: 0.8;
-	padding:0;
-	background-size: cover;
-	background-position: center;
-	overflow: auto;
-	overflow-x: hidden;
-	width:100%;
-	background-repeat: no-repeat;
-	height: 100%;
+.index_background{
+	background: url(http://www.otj.com/wp-content/uploads/2015/06/Pantry-v2.jpg) no-repeat center center fixed;
+    
+    background-size: cover;
+    height:100vh;
+    width:100%;
+    opacity: 0.95;
+    position: relative;
+    background-color: #D92528;
+    
 }
 
 #index_naslov{
@@ -117,4 +116,56 @@ body{
 	text-shadow: 1px 1px 6px black;
 	font-family: "Candara";
 	font-size: 20px;
+}
+
+.menu
+{
+	background-color: transparent; 
+	margin-top: 15px;
+	margin-right: 5%; 
+	float: right;
+	z-index: 10;
+	color: white!important;
+	position:relative;
+	height:70px;
+  	color:white;
+}
+
+
+
+.index_background .shadow 
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #5D5D5D;
+  opacity: 0.55;
+  z-index: 5;
+}
+
+.index{
+	font-family: "Candara";
+	z-index: 10;
+	color: white!important;
+	text-shadow: 2px 2px 4px black;
+	position: relative;
+	float: right;
+	
+}
+
+.index.title{
+	font-size: 80px;
+	margin-right: 5%;
+	margin-top: 0%;
+
+}
+
+.index.opis{
+	font-size:17px;
+	margin-right: 5%;
+	margin-top: 0%;
+	text-align: right;
+
 }
