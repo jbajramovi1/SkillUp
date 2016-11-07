@@ -37,6 +37,28 @@ body{
 	
 }
 
+@media only screen and (max-width:768px) {
+     /*Za mobitele: */
+    .kolona.dva{
+    	width: 100%;
+    }
+    .rasiri {
+        width: 100%;
+        float: right;
+    }
+    .sakrij
+    {
+    	display: none;
+    }
+    .kolona.tri{
+    	width: 45%;
+    }
+}
+
+
+
+
+
 .red.header{
 	opacity: 0.85;
 	padding: 0;
@@ -65,6 +87,9 @@ body{
 #header_login{
 	background-image: url(https://static.pexels.com/photos/6352/woman-hand-smartphone-laptop-landscape.jpg);
 }
+#header_signup{
+	background-image: url(http://images.wisegeek.com/hands-on-keyboard-of-laptop.jpg);
+}
 
 .naslov{
 	font-size: 50px;
@@ -80,7 +105,7 @@ body{
 	background: url(http://www.otj.com/wp-content/uploads/2015/06/Pantry-v2.jpg) no-repeat center center fixed;
     
     background-size: cover;
-    height:100vh;
+    height:100%;
     width:100%;
     opacity: 0.95;
     position: relative;
@@ -159,7 +184,7 @@ body{
 	font-size: 80px;
 	margin-right: 5%;
 	margin-top: 0%;
-
+	margin-bottom: 0%;
 }
 
 .index.opis{
