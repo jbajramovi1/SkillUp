@@ -1,7 +1,7 @@
 body{
 	width: 100%;
 	margin: 0px;
-	min-width: 500px;
+
 	padding: 0px;
 	overflow-x: hidden;
 	height: 100vh;
@@ -10,6 +10,7 @@ body{
 
 html{
 	height: 100%;
+
 }
 .red{
 	width:100%;
@@ -69,9 +70,7 @@ html{
     {
     	display: none;
     }
-    .kolona.tri{
-    	width: 45%;
-    }
+    
 
     #kontakt_info{
     	margin-left: 20px;
@@ -85,21 +84,52 @@ html{
 
     #red_galerija
     {
-    	height: 500px;
+    	height: 250px;
     }
+
 
 
     
 }
 
-@media only screen and (max-width:1400px) and (min-width: 768px)
+@media only screen and (max-width: 1210px)
+{
+	 .stavke{
+    	visibility: hidden;
+    }
+
+.ikona
+    {
+    	visibility: visible!important;
+    }
+
+
+}
+
+@media only screen and (max-width:1400px) and (min-width: 1200px)
 {
 	.dropdown{
 		visibility: hidden!important;
 	}
+
+	
 }
 
+@media only screen and (max-height: 450px)
+{
+	.index.opis{
+		display: none!important;	
+	}
 
+
+	.rasiri{
+		height: 20vh;
+	}
+
+	.index.title{
+		height: 20vh;
+	}
+}
 
 .red.header{
 	opacity: 0.85;
