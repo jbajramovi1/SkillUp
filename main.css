@@ -4,22 +4,26 @@ body{
 	min-width: 500px;
 	padding: 0px;
 	overflow-x: hidden;
-	overflow-y: scroll;
+	height: 100vh;
 	
 }
 
-
+html{
+	height: 100%;
+}
 .red{
 	width:100%;
 	margin:0;
-	padding: 10px;
-	height: 250px;
+	padding-top: 2vh;
+	height: 40vh;
 
 }
 
 .kolona{
 	margin-left: 2%;
 	margin-right: 2%;
+	margin-bottom: 2%;
+	
 	height: 250px;
 	float: left;
 }
@@ -31,10 +35,11 @@ body{
 
 .kolona.tri{
 	width: 29%;
+	overflow: hidden;
 }
 
 #footer {
-	height: 75px;
+	height: 10vh;
 	
 }
 #kontakt_info{
@@ -78,12 +83,21 @@ body{
     	visibility: hidden;
     }
 
+    #red_galerija
+    {
+    	height: 500px;
+    }
 
 
     
 }
 
-
+@media only screen and (max-width:1400px) and (min-width: 768px)
+{
+	.dropdown{
+		visibility: hidden!important;
+	}
+}
 
 
 
@@ -94,7 +108,7 @@ body{
 	background-position: center;
 	background-clip: content-box;
 	overflow: auto;
-	
+	height: 250px!important;
 }
 
 #header_tedtalks{
@@ -117,6 +131,11 @@ body{
 }
 #header_signup{
 	background-image: url(http://images.wisegeek.com/hands-on-keyboard-of-laptop.jpg);
+}
+
+#header_galerija{
+	background-image: url(https://s-media-cache-ak0.pinimg.com/originals/8f/66/73/8f66738441685ea781845c417e7d6760.jpg);
+
 }
 
 .naslov{
@@ -181,7 +200,7 @@ body{
 	font-weight: 550;
 	text-shadow: 1px 1px 2px black;
 	font-family: "Candara";
-	font-size: 20px;
+	font-size: 15px;
 }
 
 .drop.stavka{
@@ -217,7 +236,7 @@ body{
 
 	box-shadow: 0px 10px 16px 0px rgba(0,0,0,0.6);
 	background-color: white;
-	opacity: 0.3;
+	opacity: 0.2;
 	
 
 }
@@ -302,7 +321,7 @@ body{
 
 form{
 	text-align: center;
-	padding-top: 20px;
+	padding-bottom: 2px;
 }
 
 #forma_poruka{
@@ -360,4 +379,20 @@ form{
 	float: right;
 	width: 150px;
 	margin-right: 90px;
+}
+
+.galerija.slika{
+	margin: auto;
+	max-width: 100%;
+	max-height: 100%;
+	
+}
+
+
+.greska{
+	font-size: 18px;
+	font-family: "Candara";
+	color: black;
+	text-align: center;
+	margin: 0;
 }

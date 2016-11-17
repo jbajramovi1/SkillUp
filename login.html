@@ -18,9 +18,10 @@
 					</div>
 					<div class="stavke">
 						<ul class="meni">
-							<li class="meni stavka"><a class="meni link" href="signup.html">Registracija</a></li>
+							<li class="meni stavka"><a class="meni link" href="signup.html">Sign up</a></li>
 							<li class="meni stavka"><a class="meni link" href="login.html">Login</a></li>
 							<li class="meni stavka"><a class="meni link" href="kontakt.html">Kontakt</a></li>
+							<li class="meni stavka"><a class="meni link" href="galerija.html">Galerija</a></li>
 							<li class="meni stavka"><a class="meni link" href="tedtalks.html">TedTalks</a></li>
 							<li class="meni stavka"><a class="meni link" href="novosti.html">Novosti</a></li>
 							<li class="meni stavka"><a class="meni link" href="softskills.html">SoftSkills</a></li>
@@ -28,13 +29,14 @@
 						</ul>
 					</div>
 				</div>
-				<p class="naslov">Login</p>
+				<p class="naslov">Kontakt</p>
 				<div id="dropdownMeni" class="dropdown podstranice">
 					
 					<ul class="meni">
 							<li class="drop stavka"><a class="drop link" href="softskills.html">SoftSkills</a></li>
 							<li class="drop stavka"><a class="drop link" href="novosti.html">Novosti</a></li>
 							<li class="drop stavka"><a class="drop link" href="tedtalks.html">TedTalks</a></li>
+							<li class="drop stavka"><a class="drop link" href="galerija.html">Galerija</a></li>
 							<li class="drop stavka"><a class="drop link" href="kontakt.html">Kontakt</a></li>
 							<li class="drop stavka"><a class="drop link" href="login.html">Login</a></li>
 							<li class="drop stavka"><a class="drop link" href="signup.html">Sign up</a></li>
@@ -47,11 +49,12 @@
 <div class="red">
 	<form>
 		<p class="input_text">Korisničko ime</p>
-  		<input class="unos" type="text" name="username"><br><br>
+  		<input id="loginUser" class="unos" type="text" name="username"><br><br>
   		<p class="input_text">Lozinka</p>
-  		<input class="unos" type="password" name="password"><br><br>
-  		<input class="btn" type="submit" name="login" value="Prijava">
+  		<input id="loginPass" class="unos" type="password" name="password"><br><br>
+  		<input class="btn" onclick="validirajLogin()" type="button" name="login" value="Prijava">
 	</form>
+	<p id="greskaLogin" class="greska"></p>
 </div>
 <div class="red" id="footer"></div>
 </body>
