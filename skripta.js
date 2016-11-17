@@ -51,3 +51,31 @@ function validirajRegistraciju(){
     }
     document.getElementById("greskaSignup").innerHTML = tekst;
 }
+
+function hover(element)
+{
+	element.style.opacity="0.7";
+}
+
+function exithover(element)
+{
+	element.style.opacity="1.0";
+}
+
+function otvorisliku(slika)
+{
+	var modal = document.getElementById('photoModal');
+	var modalImg = document.getElementById("img01");
+
+ 	modal.style.display = "block";
+    modalImg.src = slika.src;
+
+}
+
+window.onkeydown = function(event) {
+    var modal = document.getElementById('photoModal');
+    if (event.keyCode == 27) {
+        modal.style.display="none";
+    }
+}
+
