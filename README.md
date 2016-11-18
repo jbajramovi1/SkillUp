@@ -8,11 +8,11 @@
 -Nisam primjetila bugove, ali ono što planiram uraditi je collapsible meni za širinu ekrana manju od 768px.
 
 Fajlovi:
--index.html - početna stranica
--softskills.html - stranica na kojoj će se nalaziti tekst o tome šta Soft skills predstavljaju
--novosti.html - stranica sa novostima (člancima o pojedinim "mekim vještinama")
--tedtalks.html - stranica sa youtube videima sa TedTalk seminara
--kontakt.html - stranica sa kontakt informacijama i formom za ostavljanje poruke (maila)
--login.html - stranica za prijavu
--signup.html - stranica za registraciju
--main.css - glavni css fajl
+index.html - početna stranica
+softskills.html - stranica na kojoj će se nalaziti tekst o tome šta Soft skills predstavljaju
+novosti.html - stranica sa novostima (člancima o pojedinim "mekim vještinama")
+tedtalks.html - stranica sa youtube videima sa TedTalk seminara
+kontakt.html - stranica sa kontakt informacijama i formom za ostavljanje poruke (maila)
+login.html - stranica za prijavu
+signup.html - stranica za registraciju
+main.css - glavni css fajl
