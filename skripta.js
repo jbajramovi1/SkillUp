@@ -1,3 +1,9 @@
+var script = document.createElement('script');
+script.src = 'skripta.js';
+script.onload = function()
+{};
+document.head.appendChild(script);
+
 function onclick_homeBtn(){
 	window.location="index.html";
 }
@@ -33,12 +39,12 @@ function validirajRegistraciju(){
 	pass1=document.getElementById("signupPass1").value;
 	pass2=document.getElementById("signupPass2").value;
 
-	var regex=/\S+@\S+\.\S+/;
+	var regex=/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
 	if (user=="" || pass1=="" || pass2=="" || email==""){
 		tekst="Unesite podatke u sva polja.";
 
 	}
-	else if (!regex.test(email)){
+	else if (!email.match(regex)){
 		tekst="E-mail nije validan.";
 	}
 
@@ -79,3 +85,22 @@ window.onkeydown = function(event) {
     }
 }
 
+function loadPage(stranica) {
+	
+    var ajax = new XMLHttpRequest();	
+	ajax.onreadystatechange = function () {
+        if (ajax.readyState == 4 && ajax.status == 200)
+        {
+            document.open();
+            document.write(ajax.responseText);
+            document.close();
+        }
+        if (ajax.readyState == 4 && ajax.status == 404)
+        alert("error");
+       
+    }   
+    ajax.open("GET",stranica, true);
+	     
+	ajax.send();
+
+}

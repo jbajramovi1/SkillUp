@@ -121,13 +121,23 @@ html{
 		display: none!important;	
 	}
 
-
 	.rasiri{
 		height: 20vh;
 	}
 
 	.index.title{
 		height: 20vh;
+	}
+}
+
+@media only screen and (max-height: 450px)
+{
+	.index.title{
+		display: none!important;
+	}
+
+	#index-body{
+		overflow-y: hidden;
 	}
 }
 
@@ -186,7 +196,7 @@ html{
     width:100%;
     opacity: 0.95;
     position: relative;
-    background-color: #D92528;
+    background-color: gray;
     
 }
 
@@ -427,6 +437,7 @@ form{
 	color: black;
 	text-align: center;
 	margin: 0;
+	height: 20px;
 }
 
 .modal {
