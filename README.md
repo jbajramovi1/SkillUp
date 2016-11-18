@@ -3,7 +3,8 @@
 ##Bajramović Jasmina, 16995
 ######SkillUp je web stranica na kojoj možete pronaći sve informacije o tzv. "mekim vještinama" (eng. **soft skills**), njihovoj važnosti i načinima na koje ih možete unaprijediti. :muscle:
 
--Urađene su sve stavke **Spirale 1**.
+**SPIRALA 1**
+-Urađene su sve stavke **Spirale 1**.<br />
 
 -Nisam primjetila bugove, ali ono što planiram uraditi je collapsible meni za širinu ekrana manju od 768px.
 
@@ -16,3 +17,18 @@ Fajlovi: <br />
 -login.html - stranica za prijavu <br />
 -signup.html - stranica za registraciju <br />
 -main.css - glavni css fajl<br />
+
+
+**SPIRALA 2**
+-Urađene su sljedeće stavke **Spirale 2**:<br />
+-Validacija polja formi za login i registraciju, sa ispisom odgovarajuće poruke<br />
+-Dropdown meni za širinu ekrana manju od 768px.<br />
+-Implementirana galerija sa traženom funkcionalnosti<br />
+-Podstranice se učitavaju bez reloada cijele stranice (samo sadržaja), pomoću Ajaxa<br />
+
+-Nisam primjetila bugove
+
+Novi fajlovi koji su dodani:<br />
+-galerija.html - stranica na kojoj je galerija sa motivacionim slikama<br />
+-skripta.js - javascript fajl za koji se vežu svi html fajlovi <br />
+
