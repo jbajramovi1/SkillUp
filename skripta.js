@@ -34,26 +34,32 @@ function validirajLogin(){
 }
 
 function validirajRegistraciju(){
+
 	user=document.getElementById("signupUser").value;
 	email=document.getElementById("signupEmail").value;
 	pass1=document.getElementById("signupPass1").value;
 	pass2=document.getElementById("signupPass2").value;
 
+    button=document.getElementById("registracijaBtn");
+    
 	var regex=/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
 	if (user=="" || pass1=="" || pass2=="" || email==""){
 		tekst="Unesite podatke u sva polja.";
-
+        button.disabled=true;
 	}
 	else if (!email.match(regex)){
 		tekst="E-mail nije validan.";
+        button.disabled=true;
 	}
 
 	else if (pass1!=pass2) {
         tekst = "Unesene lozinke nisu iste.";
+        button.disabled=true;
     } 
     
     else{
     	tekst="";
+        button.disabled=false;
     }
     document.getElementById("greskaSignup").innerHTML = tekst;
 }
