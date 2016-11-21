@@ -45,23 +45,40 @@ function validirajRegistraciju(){
 	var regex=/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
 	if (user=="" || pass1=="" || pass2=="" || email==""){
 		tekst="Unesite podatke u sva polja.";
-        button.disabled=true;
+        
 	}
 	else if (!email.match(regex)){
 		tekst="E-mail nije validan.";
-        button.disabled=true;
+       
 	}
 
 	else if (pass1!=pass2) {
         tekst = "Unesene lozinke nisu iste.";
-        button.disabled=true;
+       
     } 
     
     else{
     	tekst="";
-        button.disabled=false;
+       
     }
     document.getElementById("greskaSignup").innerHTML = tekst;
+}
+
+function validirajKontakt(){
+    poruka=document.getElementById("porukaKontakt").value;
+    if (trimfield(poruka)=="")
+    {
+        tekst="Ne mozete poslati praznu poruku.";
+    }
+    else{
+        tekst="";
+    }
+    document.getElementById("greskaKontakt").innerHTML=tekst;
+}
+
+function trimfield(str) 
+{ 
+    return str.replace(/^\s+|\s+$/g,''); 
 }
 
 function hover(element)

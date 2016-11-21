@@ -50,9 +50,10 @@
 	<div class="kolona dva">
 		<form id="forma_poruka">
 			<br><br><p class="input_text">Pošaljite nam poruku</p><br>
-			<textarea name="poruka" cols="70" rows="10"></textarea><br><br>
-			<input id="porukaBtn" class="btn" type="submit" name="porukaBtn" value="Pošalji">
+			<textarea id="porukaKontakt" name="poruka" cols="70" rows="10"></textarea><br><br>
+			<input id="porukaBtn" onclick="validirajKontakt()" class="btn" type="button" name="porukaBtn" value="Pošalji">
 		</form>
+		<p id="greskaKontakt" class="greska"></p>
 	</div>
 	<div class="kolona dva" id="kontakt_info">
 		<br><br>

@@ -402,9 +402,8 @@ form{
 }
 
 #ime{
-	background-image: url(http://www.freeiconspng.com/uploads/person-outline-icon-png-person-outline-icon-png-person-17.png);
+	background-image: url(https://cdn3.iconfinder.com/data/icons/glypho-generic-icons/64/user-woman-circle-256.png);
 }
-
 #mail{
 	background-image: url(http://simpleicon.com/wp-content/uploads/mail-4.png);
 }
@@ -459,4 +458,8 @@ form{
     display: block;
     width: 80%;
     max-width: 700px;
+}
+
+#greskaKontakt{
+	text-align: left!important;
 }
