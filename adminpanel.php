@@ -112,6 +112,10 @@ if (isset($_SESSION['user']) && $_SESSION['user']=="admin")
 <br>
 <input type="submit" class="btn" name="submit" value="Preuzmi PDF" /><br><br>
 </form>
+<form action="csvgovornici.php" method="post">
+
+<input type="submit" style="margin-left: 0px" class="btn" name="submit" value="Preuzmi CSV" style="display:<?php if (empty($adminhide)) {echo 'none';} else{ echo 'block';}?>" /><br><br>
+</form>
 
 </div>
 <div class="red" id="footer"></div>
