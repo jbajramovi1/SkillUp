@@ -6,6 +6,7 @@ document.head.appendChild(script);
 
 function onclick_homeBtn(){
 	window.location="index.html";
+    
 }
 
 function onclick_meniBtn(){
@@ -126,4 +127,111 @@ function loadPage(stranica) {
 	     
 	ajax.send();
 
+}
+
+function search() {
+    
+    var input, filter, ul, li, a, i;
+    input = document.getElementById('searchInput');
+    filter = input.value.toUpperCase();
+   
+
+    var parent = document.getElementById('govornici');
+    var brojac=0;
+    itemDivs=parent.children;
+    for(var i = 0; i < itemDivs.length; i++) {   
+        
+            kolona=itemDivs[i].children[1];
+            ime=kolona.firstChild.nextSibling;
+            mjesto=kolona.children[0].nextSibling.nextSibling;
+            
+            if (brojac>=10)
+            {
+                itemDivs[i].style.display = "none";   
+            }
+            else if (ime.innerHTML.toUpperCase().indexOf(filter) > -1 || mjesto.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                itemDivs[i].style.display = "";
+                brojac=brojac+1;
+            } 
+
+            else {
+                itemDivs[i].style.display = "none";
+            }
+        
+   
+    }
+ 
+
+
+}
+
+function searchadmin() {
+    
+    var input, filter, ul, li, a, i;
+    input = document.getElementById('searchInput');
+    filter = input.value.toUpperCase();
+   
+
+    var parent = document.getElementById('govornici');
+    var brojac=0;
+    itemDivs=parent.children;
+    for(var i = 0; i < itemDivs.length; i++) {   
+        
+            forma=itemDivs[i].children[1];
+            kolona=forma.children[1];
+            ime=kolona.firstChild.nextSibling;
+            mjesto=kolona.children[0].nextSibling.nextSibling;
+            if (brojac>=10)
+            {
+                itemDivs[i].style.display = "none";   
+            }
+            else if (ime.value.toUpperCase().indexOf(filter) > -1 || mjesto.value.toUpperCase().indexOf(filter) > -1) {
+                itemDivs[i].style.display = "";
+                brojac=brojac+1;
+            } 
+
+            else {
+                itemDivs[i].style.display = "none";
+            }
+        
+   
+    }
+ 
+
+
+}
+
+
+
+function searchBtn()
+{
+    var input, filter, ul, li, a, i;
+    input = document.getElementById('searchInput');
+    filter = input.value.toUpperCase();
+   
+
+    var parent = document.getElementById('govornici');
+    
+    itemDivs=parent.children;
+    for(var i = 0; i < itemDivs.length; i++) {
+        itemDivs[i].style.display = "";
+    }
+    for(var i = 0; i < itemDivs.length; i++) {   
+        
+            kolona=itemDivs[i].children[1];
+            ime=kolona.firstChild.nextSibling;
+            mjesto=kolona.children[0].nextSibling.nextSibling;
+            
+            
+            if (ime.innerHTML.toUpperCase().indexOf(filter) > -1 || mjesto.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                itemDivs[i].style.display = "";
+                
+            } 
+
+            else {
+                itemDivs[i].style.display = "none";
+            }
+        
+   
+    }
 }

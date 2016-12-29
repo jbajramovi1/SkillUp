@@ -178,6 +178,10 @@ html{
 
 }
 
+#header_govornici{
+	background-image: url(https://www.seurakuntalainen.fi/wp-content/uploads/2015/05/5899-vihapuhe_kuva_shutterstock.jpg);
+}
+
 .naslov{
 	font-size: 50px;
 	font-family: "Candara";
@@ -462,4 +466,120 @@ form{
 
 #greskaKontakt{
 	text-align: left!important;
+}
+
+
+
+.element{
+border-style: solid;
+	border-radius: 9px;
+	border-color: grey;
+	box-shadow: 0px 10px 16px 0px rgba(0,0,0,0.6);
+	margin-left: 30vw;
+	margin-right: 30vw;
+	margin-top: 2vh;
+	height: 19vh!important;
+}
+
+#govornici{
+	margin-top: 60px;
+}
+#element_photo{
+	width: 10vw;
+	height: 16vh;
+}
+#kolona_desno{
+	width: 26vw;
+	
+	float: right;
+	height: 12vh;
+	margin-top: 0vh!important;
+	padding-top: 0px!important;
+	
+}
+
+#kolona_lijevo{
+	width: 10vw;
+	height: 12vh;
+	float:left;
+	margin-right: 0;
+	margin-top: 10px;
+}
+
+.desc{
+	font-size:22px!important;
+	color: rgb(40,40,40)!important;	
+	font-family: "Candara";
+	border-radius: 4px;
+	float: left;
+	width: 80%;
+	margin-left: 0;
+	color: black;
+	margin-bottom: 0px;
+	text-align: left;
+	
+}
+
+#listMjesto{
+	font-size: 18px!important;
+}
+
+#searchInput{
+	float: right;
+	margin-right: 33vw;
+	margin-top: 10px;
+	border-radius: 6px;
+	background-color: white;
+	font-size: 14px;
+	width: 200px;
+	height: 30px;
+	color: gray;
+	font-family: "Candara";
+}
+
+#searchIcon{
+	width: 22px;
+	height: 26px;
+
+	margin-top: 13px!important;
+	position: absolute;
+	
+	margin-left: 66vw;
+	float: right;
+}
+
+.promjenaBtn{
+	width: 100px;
+	height: 30px;
+	float: left;
+	border-radius: 6px;
+	background-color: dimgray;
+	font-size: 14px;
+	color: white;
+	font-family: "Candara";
+	margin-left: 0px!important;
+	margin-bottom: 20px;
+}
+
+#dodaj{
+	height: 28vh!important;
+	width: 320px;
+	float: right;
+	margin-left: 73vw!important;
+	margin-top: 60px;
+	position: absolute;
+	padding-left: 10px;
+	
+}
+
+#adminBtn{
+	background-color: rgb(253, 184, 19)!important;
+	font-size: 17px!important;
+	width: 150px!important;
+	height: 40px!important;
+	margin-right: 80px;
+	z-index: 10!important;
+	position: relative;
+	float: right; 
+	
 }
