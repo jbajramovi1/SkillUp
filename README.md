@@ -3,7 +3,7 @@
 ##Bajramović Jasmina, 16995
 ######SkillUp je web stranica na kojoj možete pronaći sve informacije o tzv. "mekim vještinama" (eng. **soft skills**), njihovoj važnosti i načinima na koje ih možete unaprijediti. :muscle:
 
-**SPIRALA 1**
+**SPIRALA 1**<br />
 -Urađene su sve stavke **Spirale 1**.<br />
 
 -Nisam primjetila bugove, ali ono što planiram uraditi je collapsible meni za širinu ekrana manju od 768px.
@@ -19,7 +19,7 @@ Fajlovi: <br />
 -main.css - glavni css fajl<br />
 
 
-**SPIRALA 2**
+**SPIRALA 2**<br />
 -Urađene su sljedeće stavke **Spirale 2**:<br />
 -Validacija polja formi za login i registraciju, sa ispisom odgovarajuće poruke<br />
 -Dropdown meni za širinu ekrana manju od 768px.<br />
@@ -32,7 +32,7 @@ Novi fajlovi koji su dodani:<br />
 -galerija.html - stranica na kojoj je galerija sa motivacionim slikama<br />
 -skripta.js - javascript fajl za koji se vežu svi html fajlovi <br />
 
-**SPIRALA 3**
+**SPIRALA 3**<br />
 -Urađene su sljedeće stavke **Spirale 3**:<br  />
 -Napravila serijalizaciju podataka o govornicima u XML fajl govornici.xml . Adminu sam omogućila unos, uređivanje i brisanje podataka (govornika). Trenutno se username i pass za admina nalaze u fajlu admin.xml. Za ovaj zadatak dodala sam podstranicu Govornici (govornici.php) na kojoj je lista upisanih govornika te Admin panel (adminpanela.php) kojoj može pristupiti admin nakon što se loguje klikom na button "Admin panel". Prilikom upisa podataka o govornicima i ispisa u listu koristila sam funkciju htmlentities().<br />
 -Omogućila adminu download podataka u obliku csv fajla. Admin može downloadovati ove podatke klikom na button "Preuzmi CSV" na podstranici Admin panel.<br />
