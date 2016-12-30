@@ -36,6 +36,7 @@ Novi fajlovi koji su dodani:<br />
 -Urađene su sljedeće stavke **Spirale 3**:<br  />
 -Napravila serijalizaciju podataka o govornicima u XML fajl govornici.xml . Adminu sam omogućila unos, uređivanje i brisanje podataka (govornika). Trenutno se username i pass za admina nalaze u fajlu admin.xml. Za ovaj zadatak dodala sam podstranicu Govornici (govornici.php) na kojoj je lista upisanih govornika te Admin panel (adminpanela.php) kojoj može pristupiti admin nakon što se loguje klikom na button "Admin panel". Prilikom upisa podataka o govornicima i ispisa u listu koristila sam funkciju htmlentities().<br />
 -Omogućila adminu download podataka u obliku csv fajla. Admin može downloadovati ove podatke klikom na button "Preuzmi CSV" na podstranici Admin panel.<br />
--Omogućila generisanje pdf fajla sa podacima o govornicima. Moguće je preuzeti pdf na podstranici Govornici. Admin ovo može uraditi i na stranici Govornici i Admin panel. Za generisanje pdf fajla koristila sam biblioteku fpdf.<br />
+-Omogućila generisanje pdf fajla sa podacima o govornicima. Moguće je preuzeti pdf na podstranici Govornici. Admin ovo može uraditi i na stranici Govornici(govornici.php) i Admin panel. Za generisanje pdf fajla koristila sam biblioteku fpdf.<br />
 -Napravila opciju search na podstranici Govornici i Admin panel (pristup ima admin). Ispoštovano je sve što se tražilo u spirali što se tiče pretrage. Pretraga se vrši po poljima "Ime i prezime" i "Mjesto rodjenja" govornika.<br />
-- Uspješno deployment na OpenShift (link-->http://skillup-skillup.44fs.preview.openshiftapps.com/ )
+- Uspješno deployment na OpenShift (link-->http://skillup-skillup.44fs.preview.openshiftapps.com/ )<br />
+- Sve podstranicu su sad .php, a nove koju su dodane su spomenute u prethodnom tekstu<br />
