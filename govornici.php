@@ -97,7 +97,7 @@
 </form>
 <form action="csvgovornici.php" method="post">
 
-<input type="submit" style="margin-left: 0px" class="btn" name="submit" value="Preuzmi CSV" style="display:<?php if (empty($adminhide)) {echo 'none';} else{ echo 'block';}?>" /><br><br>
+<input type="submit" id="csvBtn" style="display:<?php if (empty($adminhide)) {echo 'none';} else{ echo 'block';}?>"class="btn" name="submit" value="Preuzmi CSV"  /><br><br>
 </form>
 
 </div>

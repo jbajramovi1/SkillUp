@@ -1,5 +1,5 @@
 <?php  	   		
-    session_start();	
+    //session_start();	
     $admin = simplexml_load_file("admin.xml");
     $username=$admin->username;
     $password=$admin->password;
@@ -9,30 +9,30 @@
     $tekst="";
     if ($usernameInput=="" && $passwordInput==""){
 		$tekst="Unesite podatke u sva polja.";
-		require 'login.php';
+		require('login.php');
 		
 	}
 	else if ($usernameInput=="") {
         $tekst = "Unesite korisničko ime.";
-        require 'login.php';
+        require('login.php');
 		
     } 
     else if ($passwordInput==""){
     	$tekst="Unesite lozinku.";
-    	require 'login.php';
+    	require('login.php');
 		
     }
     else if($username!=$usernameInput || $password!=$passwordInput)
     {
     	$tekst="Uneseni korisnički podaci nisu ispravni.";
-    	require 'login.php';
+    	require('login.php');
 		
         
     }
     else{
     	$tekst="";
 
-    
+    session_start();
     $_SESSION['user']="admin";
     $adminhide="none";
     $buttonhide="block";

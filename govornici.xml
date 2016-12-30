@@ -8,10 +8,45 @@
             <slika>https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/de98b161ad1434910ff4b56c89de71af04b8b873_1600x1200.jpg</slika>
         </govornik>
         
+        <govornik>
+            <id>2</id>
+            <ime>Simon Sinek</ime>
+            <mjesto>Wimbledon, UK</mjesto>
+
+            <slika>http://tedconfblog.files.wordpress.com/2014/03/ted2014_dd_dsc_0911_1920.jpg</slika>
+        </govornik>
         
+        <govornik>
+            <id>3</id>
+            <ime>Trevor Aaronson</ime>
+            <mjesto>New York, USA</mjesto>
+
+            <slika>https://theintercept.com/wp-uploads/sites/1/2015/03/Trevor_Aaronson-e1447958123308-440x440.jpg</slika>
+        </govornik>
         
-        
-        
+        <govornik>
+            <id>4</id>
+            <ime>Trevor Aaronson</ime>
+            <mjesto>New York, USA</mjesto>
+
+            <slika>https://theintercept.com/wp-uploads/sites/1/2015/03/Trevor_Aaronson-e1447958123308-440x440.jpg</slika>
+        </govornik>
+
+        <govornik>
+            <id>5</id>
+            <ime>Kate Adams</ime>
+            <mjesto>New York, USA</mjesto>
+
+            <slika>http://soaps.skim.gs/image/upload/w_1230,h_718,c_fill/v161215220610/soaps/wp-content/uploads/2016/12/Kate-Adams-TED-Talk-ATWT-TED.jpg</slika>
+        </govornik>
+
+        <govornik>
+            <id>6</id>
+            <ime>Kate Adams</ime>
+            <mjesto>New York, USA</mjesto>
+
+            <slika>http://soaps.skim.gs/image/upload/w_1230,h_718,c_fill/v161215220610/soaps/wp-content/uploads/2016/12/Kate-Adams-TED-Talk-ATWT-TED.jpg</slika>
+        </govornik>
         
         <govornik>
             <id>8</id>
