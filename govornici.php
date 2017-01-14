@@ -63,7 +63,7 @@
 
 
 	<input type="text" id="searchInput" onkeyup ="search()" placeholder="Pretraži govornike...">
-	<img id="searchIcon" src="http://www.freeiconspng.com/uploads/search-icon-png-2.png" onclick="searchBtn()">
+	<img id="searchIcon" src="http://www.clipartkid.com/images/775/search-icon-clip-art-at-clker-com-vector-clip-art-online-royalty-643l5L-clipart.png" onclick="searchBtn()">
 
 		<div id="govornici">
 			<?php

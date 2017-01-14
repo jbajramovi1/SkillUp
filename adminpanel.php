@@ -62,7 +62,7 @@ if (isset($_SESSION['user']) && $_SESSION['user']=="admin")
 
 
 	<input type="text" id="searchInput" onkeyup ="searchadmin()" placeholder="Pretraži govornike...">
-	<img id="searchIcon"  src="http://www.freeiconspng.com/uploads/search-icon-png-2.png" onclick="searchBtn()">
+	<img id="searchIcon"  src="http://www.clipartkid.com/images/775/search-icon-clip-art-at-clker-com-vector-clip-art-online-royalty-643l5L-clipart.png" onclick="searchBtn()">
 	<div class="element" id="dodaj" style="border-color:<?php if (empty($color)) {echo "gray";} else{ echo $color;}?>">
 		<p class='desc'>Unesi novog govornika:</p>
 		<form action='adminadd.php' method='post'>
