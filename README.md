@@ -40,3 +40,12 @@ Novi fajlovi koji su dodani:<br />
 -Napravila opciju search na podstranici Govornici i Admin panel (pristup ima admin). Ispoštovano je sve što se tražilo u spirali što se tiče pretrage. Pretraga se vrši po poljima "Ime i prezime" i "Mjesto rodjenja" govornika.<br />
 -Uspješno urađen deployment na OpenShift (link-->http://skillup-skillup.44fs.preview.openshiftapps.com/ )<br />
 -Sve podstranicu su sad .php, a nove koju su dodane su spomenute u prethodnom tekstu<br />
+
+**SPIRALA 4**<br />
+-Urađene su sljedeće stavke **Spirale 4**:<br  />
+-Napravila SQL bazu skillup sa tri tabele: govornik, lokacija i tema. Sve tri tabele su povezane i to na način da je kolona mjestorodjenja u tabeli govornik foreign key na lokaciju, a kolona govornik u tabeli tema foreign key na govornika. Podstranice Govornici i Admin panel sam izmijenila tako da sad prikazuju podatke iz svih tabela. <br  />
+-Napravila PHP skriptu xmltodb.php koja će sve podatke iz XML prebaciti u bazu podataka (preskočiti one koji već postoje u bazi). XML fajlovi iz kojih se čitaju podaci su: govornici.xml, teme.xml i lokacije.xml . Ova skripta se poziva klikom na 'Dodaj iz XML-a' link koji se nalazi na Admin panelu.<br  />
+-Prepravila sve PHP skripte tako da rade sa podacima u bazi.<br  />
+-OpenShift link: http://skillup-skillup.44fs.preview.openshiftapps.com/ <br  />
+-u skripti getmethod.php implementirana je metoda GET REST web servisa. Poziv ove skripte vrši se klikom na 'Pregledaj lokacija u Json-u' na dnu podstranice Admin panel.<br  />
+-Testiranje koje sam uradila pomoću Postman možete pogledati u pdf-u postman.pdf
