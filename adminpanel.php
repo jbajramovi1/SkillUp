@@ -82,7 +82,7 @@ if (isset($_SESSION['user']) && $_SESSION['user']=="admin")
 			<div id="govornici">
 			<?php
     	   		
-    			$veza = new PDO("mysql:dbname=skillup;host=localhost;charset=utf8", "admin", "adminpass");
+    			$veza = new PDO("mysql:dbname=skillup;host=mysql-55-centos7", "skillup", "skilluppass");
      			$veza->exec("set names utf8");
      			$rezultat = $veza->query("select id, ime, mjestorodjenja, slika from govornik");
 

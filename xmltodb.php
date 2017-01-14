@@ -1,6 +1,6 @@
 <?php
 
-	$veza = new PDO("mysql:dbname=skillup;host=localhost;charset=utf8", "admin", "adminpass");
+	$veza = new PDO("mysql:dbname=skillup;host=mysql-55-centos7", "skillup", "skilluppass");
      			$veza->exec("set names utf8");
 
     $lokacije = simplexml_load_file("lokacije.xml");
