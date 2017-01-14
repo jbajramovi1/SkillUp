@@ -3,7 +3,7 @@
 	$veza = new PDO("mysql:dbname=skillup;host=localhost;charset=utf8", "admin", "adminpass");
      			$veza->exec("set names utf8");
 
-  /*  $lokacije = simplexml_load_file("lokacije.xml");
+    $lokacije = simplexml_load_file("lokacije.xml");
 	foreach ($lokacije as $lokacijainfo) {
 			
 			$kontinent=$lokacijainfo->kontinent;
@@ -30,7 +30,7 @@
 			    }
 				}
 			 
-	}*/
+	}
      			
 	$govornici = simplexml_load_file("govornici.xml");
 	foreach ($govornici as $govornikinfo) {
