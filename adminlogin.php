@@ -1,5 +1,5 @@
 <?php  	   		
-    //session_start();	
+    	
     $admin = simplexml_load_file("admin.xml");
     $username=$admin->username;
     $password=$admin->password;

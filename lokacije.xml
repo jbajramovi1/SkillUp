@@ -1,0 +1,32 @@
+<lokacije>
+	<lokacija>
+		<kontinent>Nepoznato</kontinent>
+		<drzava>Nepoznato</drzava>
+		<grad>Nepoznato</grad>
+	</lokacija>
+	<lokacija>
+		<kontinent>Evropa</kontinent>
+		<drzava>Velika Britanija</drzava>
+		<grad>Liverpool</grad>
+	</lokacija>
+	<lokacija>
+		<kontinent>Evropa</kontinent>
+		<drzava>Velika Britanija</drzava>
+		<grad>Wimbledon</grad>
+	</lokacija>
+	<lokacija>
+		<kontinent>Sjeverna Amerika</kontinent>
+		<drzava>New York</drzava>
+		<grad>New York</grad>
+	</lokacija>
+	<lokacija>
+		<kontinent>Evropa</kontinent>
+		<drzava>Škotska</drzava>
+		<grad>Edinburgh</grad>
+	</lokacija>
+	<lokacija>
+		<kontinent>Sjeverna Amerika</kontinent>
+		<drzava>Texas</drzava>
+		<grad>San Antonio</grad>
+	</lokacija>
+</lokacije>

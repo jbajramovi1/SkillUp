@@ -1,35 +1,79 @@
 <?php
     	   			
-    $govornici = simplexml_load_file("govornici.xml");
+    $veza = new PDO("mysql:dbname=skillup;host=localhost;charset=utf8", "admin", "adminpass");
+     			$veza->exec("set names utf8");
+     			$rezultat = $veza->query("select id, ime, mjestorodjenja, slika from govornik");
+
+			     if (!$rezultat) {
+			          $greska = $veza->errorInfo();
+			          print "SQL greška: " . $greska[2];
+			          exit();
+			     }
     
     
    	if (isset($_POST['save']))
 	{
- 		foreach ($govornici as $govornikinfo):
-    
-	 		if ($govornikinfo->id==$_POST['id'])
-	 		{
-		    	$govornikinfo->ime=htmlentities($_POST['ime']);
-		        $govornikinfo->mjesto=htmlentities($_POST['mjesto']);
-		     }
-    	endforeach;
+		foreach ($rezultat as $govornik) {
+			if ($govornik['id']==$_POST['id'])
+			{
+				
+				$upit=$veza->query("update govornik set ime='".$_POST['ime']."' where id='".$_POST['id']."' ");
+				if (!$upit) {
+			          $greska = $veza->errorInfo();
+			          print "SQL greška: " . $greska[2];
+			          exit();
+			    }
+         		$lokacije=$veza->query("select id,drzava,grad from lokacija where id=".$govornik['id']." ");
+         		if (!$lokacije) {
+			          $greska = $veza->errorInfo();
+			          print "SQL greška: " . $greska[2];
+			          exit();
+			    }
+			    foreach($lokacije as $lokacija)
+			    {
+			    	$upit=$veza->query("update lokacija set grad='".$_POST['mjesto']."' where id='".$lokacija['id']."' ");
+				if (!$upit) {
+			          $greska = $veza->errorInfo();
+			          print "SQL greška: " . $greska[2];
+			          exit();
+			    }
+			    }
+			    $tema=$veza->query("update tema set ime='".$_POST['tema']."' where govornik=".$_POST['id']." ");
+			     	if (!$tema) {
+			          $greska = $veza->errorInfo();
+			          print "SQL greška: " . $greska[2];
+			          exit();
+			     	}
+			     	
+			 }
+			}
+ 		
     }
-    elseif (isset($_POST['delete']))
+  	
+  	if (isset($_POST['delete']))
 	{
-		foreach ($govornici as $govornikinfo):
-    
-	 		if ($govornikinfo->id==$_POST['id'])
-	 		{
-		    	
-		    	unset($govornikinfo[0][0]);
-		    	$govornici->asXML("govornici.xml");
-		    	require 'adminpanel.php';
-		    	exit();
-		     }
-    	endforeach;
-	}
-    $govornici->asXML("govornici.xml");
-	
+		foreach ($rezultat as $govornik) {
+			if ($govornik['id']==$_POST['id'])
+			{
+				
+				$upit=$veza->query("delete from tema where govornik='".$_POST['id']."' ");
+				if (!$upit) {
+			          $greska = $veza->errorInfo();
+			          print "SQL greška: " . $greska[2];
+			          exit();
+			    }
+         		
+         		$upit=$veza->query("delete from govornik where id='".$_POST['id']."' ");
+				if (!$upit) {
+			          $greska = $veza->errorInfo();
+			          print "SQL greška: " . $greska[2];
+			          exit();
+			    }
+			    
+			 }
+			}
+ 		
+    }
 	
 	require 'adminpanel.php';
 ?>

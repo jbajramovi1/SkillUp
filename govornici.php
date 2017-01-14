@@ -65,28 +65,61 @@
 	<input type="text" id="searchInput" onkeyup ="search()" placeholder="Pretraži govornike...">
 	<img id="searchIcon" src="http://www.freeiconspng.com/uploads/search-icon-png-2.png" onclick="searchBtn()">
 
-		
+		<div id="govornici">
 			<?php
-    	   			
-    			$govornici = simplexml_load_file("govornici.xml");
-    			echo "<div id='govornici'>";
-    			foreach ($govornici as $govornikinfo):
-        		$ime=htmlentities($govornikinfo->ime);
-        		$mjesto=htmlentities($govornikinfo->mjesto);
-        		$slika=htmlentities($govornikinfo->slika);
-        		$id=htmlentities($govornikinfo->id);
-        		echo "<div class='element'>
-        					<div class='kolona dva' id='kolona_lijevo'>
-        						<img src='",$slika,"' id='element_photo'>
-        					</div>
-        					<div class='kolona dva' id='kolona_desno'>
-        						<p class='desc' id='listIme' >",$ime,"</p>
-        						<p class='desc' id='listMjesto' >",$mjesto,"</p>
-        						<p class='desc' style='display:none' id='listId' >",$id,"</p>
-        						</div></div>";
-    			endforeach;
-    			echo "</div>";
+    	   		
+    			$veza = new PDO("mysql:dbname=skillup;host=localhost;charset=utf8", "admin", "adminpass");
+     			$veza->exec("set names utf8");
+     			$rezultat = $veza->query("select id, ime, mjestorodjenja, slika from govornik");
+
+			     if (!$rezultat) {
+			          $greska = $veza->errorInfo();
+			          print "SQL greška: " . $greska[2];
+			          exit();
+			     }
+
+
+     foreach ($rezultat as $govornik) {
+         $lokacije=$veza->query("select id,drzava,grad from lokacija where id=".$govornik['mjestorodjenja']." ");
+         if (!$lokacije) {
+			          $greska = $veza->errorInfo();
+			          print "SQL greška: " . $greska[2];
+			          exit();
+			     }
+			     foreach ($lokacije as $lokacija) {
+			     	
+          ?>
+          <div class="element">
+          	<div class="kolona dva" id="kolona_lijevo">
+          		<img src="<?php print $govornik['slika']?>" id="element_photo">
+          	</div>
+          	<div class="kolona dva" id="kolona_desno">
+          		<p class="desc" style="margin-top: 20px!important" id="listIme"><?php print $govornik['ime']?></p>
+          		<p class="desc" id="listMjesto"><?php print $lokacija['grad']?></p>
+          		<?php
+          		$tema=$veza->query("select ime from tema where govornik=".$govornik['id']." ");
+			     	if (!$tema) {
+			          $greska = $veza->errorInfo();
+			          print "SQL greška: " . $greska[2];
+			          exit();
+			     	}
+			     	foreach ($tema as $temainfo) {
+			     		?>
+          		<p class="desc" style="margin-top: 20px!important" id="listTema"><?php print $temainfo['ime']?></p>
+          		<?php
+          		}
+          		?>
+          		<p class="desc" style="display: none" id="listId"><?php print $govornik['id']?></p>
+          		
+          	</div>
+          </div>
+          
+          <?php
+      
+  }
+      }
 			?>
+			</div>
 		
 	
 	
